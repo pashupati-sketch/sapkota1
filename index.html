@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 スネークゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐍 スネークゲーム</h1>
+        <div class="stats">
+            <p>スコア: <span id="score">0</span></p>
+            <p>NG回数: <span id="ng-count">0</span> / 10</p>
+        </div>
+
+        <canvas id="game-board" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <label for="speed-select">速度選択:</label>
+            <select id="speed-select">
+                <option value="150">遅い</option>
+                <option value="100" selected>並み</option>
+                <option value="50">速い</option>
+            </select>
+            <button id="start-button">▶️ ゲーム開始 / 再開</button>
+        </div>
+        
+        <div id="message-area" class="hidden">
+            <p id="game-status-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+}
+
+.game-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#game-board {
+    border: 5px solid #004d40;
+    background-color: #ccff90; 
+    margin: 15px auto;
+}
+
+.hidden {
+    display: none;
+}
